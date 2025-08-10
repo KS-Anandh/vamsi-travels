@@ -1,0 +1,47 @@
+import React from "react";
+import logo from "../assets/images/logo.png";
+const Footer = () => {
+  return (
+    <footer className="footer">
+      <div className="footer-content">
+        <div className="address-info">
+          <img src={logo} alt="" />
+          <div className="info">
+            <h2>Car Travel Agency In Kakinada</h2>
+            <p>Plot No 83, PN Colony, Srikakulam, AP</p>
+            <p>ksanandh@gmail.com</p>
+            <p>9676906525 || 96756906525</p>
+          </div>
+        </div>
+        <div className="our-offeres">
+          <ul>
+            <li>Srisailam Tour</li>
+            <li>Tirupathi Trip</li>
+            <li>Aruku Package</li>
+            <li>Annavaram Temple</li>
+            <li>Bhadrachalam </li>
+            <li>Vijayawada Plan</li>
+          </ul>
+        </div>
+        <div className="our-keyword">
+          <ul>
+            <li>Best Travel Service in Kakinada</li>
+            <li>Best Car Rentals in Kakinada</li>
+            <li>Best Travelling Offers</li>
+            <li>Cab Services in Kakinada</li>
+            <li>Taxi Services in Kakinada</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="footer-copyright">
+        <p>
+          Copyright 2025 Vamsi Travels. All Rights Reserved. Developed By KS
+          Anandh From Express Spark
+        </p>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
