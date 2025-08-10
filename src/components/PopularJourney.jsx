@@ -5,7 +5,7 @@ import image2 from '../assets/places/vijayavada.jpg'
 import image3 from '../assets/places/annavaram.jpg'
 import image4 from '../assets/places/srisailam.jpg'
 import image5 from '../assets/places/mothugudem.jpg'
-import image6 from '../assets/places/lambasingi.jpg'
+import image6 from '../assets/places/Lambasingi.jpg'
 import image7 from '../assets/places/Pancharamalu.webp'
 import image8 from '../assets/places/antervedi.jpg'
 import image9 from '../assets/places/muramulla.jpg'
@@ -122,9 +122,12 @@ const packages=[
         <div className="popularJourney-cards">
 
         {
-          packages.map((data,key)=>{
+          packages.map((data,index)=>{
             return(
-              <OfferCard contactPage={contactPage} TravelRoute={data.TravelRoute} image={data.image} CoveredAreas={data.CoveredAreas} Days={data.Days} TripType={data.TripType} Note={data.Note} category={data.category}/>
+             
+              < OfferCard  key={index} contactPage={contactPage} TravelRoute={data.TravelRoute} image={data.image} CoveredAreas={data.CoveredAreas} Days={data.Days} TripType={data.TripType} Note={data.Note} category={data.category}/>
+             
+              
             )
           })
         }
