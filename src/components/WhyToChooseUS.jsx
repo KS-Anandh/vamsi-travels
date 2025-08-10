@@ -19,9 +19,7 @@ const WhyToChooseUS = ({homePage}) => {
           , we offer reliable and comfortable travel solutions with a wide range
           of well-maintained vehicles. Our professional drivers ensure safe and
           timely journeys every time. We provide custom tour packages at
-          affordable prices with no hidden charges. Available 24/7, we’re ready
-          to serve your travel needs anytime. Choose us for a smooth,
-          stress-free, and enjoyable travel experience.
+          affordable prices with no hidden charges. 
         </p>
       </div>
       <div className="specifications">

@@ -16,9 +16,10 @@ const MobileNavBar = ({homePage,servicePage,contactPage,RentPage}) => {
           <a href="tel:8143413999">
             8143413999
           </a>
-          
+    
           
         </h2>
+    
         {
             !nav? <ImMenu size={30} onClick={navToggle}/>:<AiFillCloseCircle size={40} onClick={navToggle}/>
         }
