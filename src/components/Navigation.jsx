@@ -9,6 +9,7 @@ import { FaHeadphones } from "react-icons/fa";
 import { MdCarRental } from "react-icons/md";
 import { ImMenu } from "react-icons/im";
 
+var a= 10;
 const Navigation = ({homePage,servicePage,contactPage,RentPage}) => {
    const scrollToHomePage = () => {
     homePage.current.scrollIntoView({ behavior: "smooth" });

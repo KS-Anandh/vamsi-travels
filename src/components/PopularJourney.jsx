@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import OfferCard from "./OfferCard";
 import image1 from '../assets/places/bhadrachalam.jpg'
 import image2 from '../assets/places/vijayavada.jpg'
@@ -12,6 +12,9 @@ import image9 from '../assets/places/muramulla.jpg'
 
 
 const PopularJourney = ({servicePage,contactPage}) => {
+
+  const [category,setCategory]=useState(0);
+  const [selectedPackages,setSelectedPackages]=useState([]);
 
 const packages=[
   {
@@ -30,7 +33,7 @@ const packages=[
     Days:"1 Day",
     TripType:"Up and Down",
     Note:"Tolls, Driver Beta ",
-    category:1
+    category:2
   },
   {
     TravelRoute:"Kakinada to Annavaram",
@@ -48,7 +51,7 @@ const packages=[
     Days:"1 Day",
     TripType:"Up and Down",
     Note:"Tolls, Driver Beta ",
-    category:1
+    category:3
   },
   {
     TravelRoute:"Kakinada to Mothugudem",
@@ -57,7 +60,7 @@ const packages=[
     Days:"1 Day",
     TripType:"Up and Down",
     Note:"Tolls, Driver Beta ",
-    category:1
+    category:3
   },
   {
     TravelRoute:"Kakinada to Lambasingi",
@@ -66,7 +69,7 @@ const packages=[
     Days:"1 Day",
     TripType:"Up and Down",
     Note:"Tolls, Driver Beta ",
-    category:1
+    category:3
   },
   {
     TravelRoute:"Kakinada to Pancharamalu",
@@ -97,6 +100,22 @@ const packages=[
   },
   
 ]
+  useEffect(()=>{
+    if(category==0){
+      setSelectedPackages(packages);
+    }
+    else{
+      const data=packages.filter((item)=>{
+        return item.category==category
+      })
+      setSelectedPackages(data);
+      console.log(data)
+    }
+    console.log("data has been changed by category")
+    
+  },[category])
+
+
 
   return (
     <div className="popularJourney" ref={servicePage}>
@@ -111,18 +130,18 @@ const packages=[
       </div>
       <div className="journey-buttons">
         <ul>
-          {/* <li>See All</li> */}
-          <li>Temples</li>
-          <li>Droping</li>
-          <li>Tourist Place</li>
-          <li>Custom Plan</li>
+          <li onClick={()=>setCategory(0)} style={{background:category==0?"darkolivegreen":""}}>See All</li>
+          <li onClick={()=>setCategory(1)} style={{background:category==1?"darkolivegreen":""}}>Temples</li>
+          <li onClick={()=>setCategory(2)} style={{background:category==2?"darkolivegreen":""}}>Droping</li>
+          <li onClick={()=>setCategory(3)} style={{background:category==3?"darkolivegreen":""}}>Tourist Place</li>
+          <li onClick={()=>setCategory(0)} style={{background:category==4?"darkolivegreen":""}}>Custom Plan</li>
         </ul>
       </div>
     
         <div className="popularJourney-cards">
 
         {
-          packages.map((data,index)=>{
+          selectedPackages.map((data,index)=>{
             return(
              
               < OfferCard  key={index} contactPage={contactPage} TravelRoute={data.TravelRoute} image={data.image} CoveredAreas={data.CoveredAreas} Days={data.Days} TripType={data.TripType} Note={data.Note} category={data.category}/>

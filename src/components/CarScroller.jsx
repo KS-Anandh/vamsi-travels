@@ -12,7 +12,6 @@ import model3 from '../assets/carModels/mahindraThar.png'
 import model4 from '../assets/carModels/carens.png'
 import model5 from '../assets/carModels/creta.png'
 
-
 const CarScroller = ({RentPage}) => {
   const [isMobile, setIsMobile] = useState();
   useEffect(()=>{
