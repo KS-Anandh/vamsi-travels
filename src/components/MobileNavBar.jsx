@@ -21,7 +21,7 @@ const MobileNavBar = ({homePage,servicePage,contactPage,RentPage}) => {
         </h2>
     
         {
-            !nav? <ImMenu size={30} onClick={navToggle}/>:<AiFillCloseCircle size={40} onClick={navToggle}/>
+            !nav? <ImMenu size={30} onClick={navToggle}/>:<AiFillCloseCircle size={30} onClick={navToggle}/>
         }
       </div>
       <div className="Nav-list" style={{display:nav?"flex":"none"}}>

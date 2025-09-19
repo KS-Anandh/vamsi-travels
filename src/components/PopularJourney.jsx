@@ -120,7 +120,7 @@ const packages=[
   return (
     <div className="popularJourney" ref={servicePage}>
       <div className="popularJourney-header">
-        <h1>Popular Journey</h1>
+        <h1 className="text-3xl font-bold">Popular Journey</h1>
         <p>
           Discover our most sought-after travel routes, designed for comfort and
           delight. From sacred pilgrimages to breathtaking escapes, every trip

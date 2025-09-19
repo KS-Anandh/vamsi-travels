@@ -34,6 +34,7 @@ const Navigation = ({homePage,servicePage,contactPage,RentPage}) => {
           <h2>Vamsi Travels </h2>
           <h3><FaLocationDot color="red"/> <span style={{marginLeft:"5px"}}>Kakinada</span></h3>
         </div>
+        
       </div>
       
       <div className="options">

@@ -7,6 +7,8 @@ import PopularJourney from './components/PopularJourney'
 import Footer from './components/Footer'
 import ContactUs from './components/ContactUs'
 import MobileNavBar from './components/MobileNavBar'
+import Message from './components/Message'
+import Hero from './components/Hero'
 const App = () => {
      
   const homePage = useRef(null);
@@ -18,11 +20,14 @@ const App = () => {
     <div>
       <Navigation homePage={homePage} servicePage={servicePage} contactPage={contactPage} RentPage={RentPage}/>
       <MobileNavBar homePage={homePage} servicePage={servicePage} contactPage={contactPage} RentPage={RentPage}/>
+      
       <div className='line-height' ></div>
-      <Slider />
+      {/* <Message/> */}
+      {/* <Slider /> */}
+      <Hero/>
       <WhyToChooseUS homePage={homePage}/>
       <CarScroll RentPage={RentPage}/>
-      <PopularJourney servicePage={servicePage} contactPage={contactPage}/>
+      <PopularJourney servicePage={servicePage} contactPage={contactPage}/>    
       <ContactUs contactPage={contactPage}/>
       <Footer/>
       

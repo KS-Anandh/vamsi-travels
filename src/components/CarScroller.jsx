@@ -68,7 +68,7 @@ const CarScroller = ({RentPage}) => {
   return (
     <div className="scroller-container" ref={RentPage}>
       <div className="scroller-container-header">
-        <h1 className="scroller-title"> Our Rental Cars</h1>
+        <h1 className="scroller-title text-3xl font-bold"> Our Rental Service Cars</h1>
         <p className="scroller-container-p">
           Discover the freedom of the open road with our <span style={{fontWeight:"bolder",color:"orangered"}}>Premium Rental Cars</span> .
           Whether you're planning a weekend getaway, a business trip, or an
@@ -87,8 +87,8 @@ const CarScroller = ({RentPage}) => {
             <p className="car-price">{car.price}</p>
             <p className="car-desc">{car.desc}</p>
             <div className="car-card-btn">
-             <button className="enqury-btn">Book Now </button>
-            <button className="book-btn"> <BiSolidPhoneCall size={20}/> Call Now</button>
+             <button className="enqury-btn"><a href={`https://wa.me/8143413999?text=Hi%2C%20I%20want%20to%20book%20a%20${car.name}%20:%20${car.price}%20car`} target="_blank">Book Now</a> </button>
+            <button className="book-btn"> <BiSolidPhoneCall size={20}/> <a href="tel:9876765678">Call Now</a></button>
             </div>
            
           </div>

@@ -1,3 +1,6 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
 
@@ -46,7 +49,7 @@ font-size: 20px;
   font-weight: 400;
   font-size:16px;
   display: flex;
-  column-gap: 20px;
+  column-gap: 0px;
  
  
 
@@ -124,8 +127,8 @@ height: 10px;
 
 /* Basic height and width for the slider container */
 .keen-slider {
-  width: 100%;
-  height:530px;
+  width: 50px;
+  height:300px;
   overflow: hidden;
   
 }
@@ -138,7 +141,7 @@ height: 10px;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  width: 100%;
+  width: 300px;
   height: 100%;
 }
 
@@ -446,7 +449,7 @@ row-gap: 40px;
   align-items: center;
   justify-content: center;
   column-gap:50px;
-  row-gap:10px;
+  row-gap:10px; 
 }
 .journey-buttons ul li{
   display: flex;
@@ -679,8 +682,8 @@ row-gap: 10px;
   align-items: center;
   justify-content: center;
   transition: all 1s;
-  background-color: #797979;
-  color: white;
+  background-color: #e8e8e8;
+  color: rgb(115, 33, 33);
 }
 .Nav-list ul{
   width: 100%;
@@ -698,14 +701,65 @@ row-gap: 10px;
  padding: 5px;
 }
 .Nav-list ul li:hover{
-  background-color: orangered;
+  background-color: rgb(13, 0, 255);
   color: white;
  
 }
 .mobileNavBar-con{
   display: none;
 }
+
+/*----------------------------------- message-------------------------------------*/
+.message{
+  width:600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap:50px;
+  padding: 40px;
+
+}
+.message img{
+  width: 250px;
+  height: 250px;
+  border-radius: 0px 50px 0px 50px; 
+}
+.message .info{
+  width: 50%;
+  min-width: 280px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap:20px;
+  line-height: 25px;
+
+}
+.hero{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height:550px;
+  
+}
 @media screen and (max-width:1200px){
+  .hero{
+    flex-direction:column;
+    height: auto;
+  }
+  .message{
+    flex-direction: column;
+    row-gap:50px;
+    padding: 20px 5px;
+    width: 100%;
+  }
+  .message img{
+    width: 200px;
+    height:200px;
+  }
+  .message .info{
+    width: 100%;
+    padding: 0px 20px;
+  }
   .navigation .buttons{
     display: none;
   }
@@ -842,26 +896,37 @@ row-gap: 10px;
 
 .navigation .header .title{
   width: 200px;
+  row-gap: 5px;
 }
 .menu-icon{
   display: block;
 }
 .navigation .header .title h2{
-font-size: 25px;
+font-size: 20px;
+font-weight: bolder;
 }
 .navigation .header .title h3{
   font-weight: 400;
-  font-size:20px;
+  font-size:18px;
 }
 
 .navigation .header .seel{
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   filter: saturate(0.7) contrast(1.5);
  
 }
 .navigation {
   padding:25px 0px;
+}
+.mobileNavBar h2{
+    font-size: 14px;
+  background-color: orangered;
+  padding:8px 15px;
+}
+.line-height{
+  margin-top:-15px;
+
 }
 }
 

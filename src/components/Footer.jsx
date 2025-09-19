@@ -36,8 +36,7 @@ const Footer = () => {
 
       <div className="footer-copyright">
         <p>
-          Copyright 2025 Vamsi Travels. All Rights Reserved. Developed By KS
-          Anandh From Express Spark
+          Copyright 2025 Vamsi Travels. All Rights Reserved. Developed By <span style={{color:"orangered",opacity:"0.7"}}><a href="https://innosify.com/">Innosify Pvt Ltd</a></span>
         </p>
       </div>
     </footer>

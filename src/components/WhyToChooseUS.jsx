@@ -5,7 +5,7 @@ const WhyToChooseUS = ({homePage}) => {
     <div className="whyToChooseUs" ref={homePage}>
       <div className="header">
         
-        <h1>Why To Choose Vamsi Travels</h1>
+        <h1 className="text-3xl font-bold">Why To Choose Vamsi Travels</h1>
         <p style={{color:"#555"}}>
           <span
             style={{
