@@ -11,6 +11,14 @@ import Message from './components/Message'
 import Hero from './components/Hero'
 const App = () => {
 
+   useEffect(() => {
+    // Force remove any dark mode classes
+    document.documentElement.classList.remove("dark");
+    // Optional: force light color scheme
+    document.documentElement.style.colorScheme = "light";
+  }, []);
+
+  
   const homePage = useRef(null);
   const servicePage = useRef(null)
   const contactPage= useRef(null)
