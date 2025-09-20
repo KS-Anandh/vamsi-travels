@@ -21,6 +21,7 @@ a{
   justify-content: space-around;
   cursor: pointer;
   padding:50px 10px;
+  background-color:rgb(255, 228, 219);
 
 
 }
@@ -75,7 +76,7 @@ font-size: 20px;
 
 }
 .line-height{
-background-color: rgb(211, 56, 0);
+background-color: rgb(242, 109, 61);
 height: 10px;
 }
 .navigation .options ul{
@@ -95,6 +96,10 @@ height: 10px;
  transition: all .5s;
  border-radius: 5px;
 }
+.navigation .options ul li:first-child{
+  background-color: orangered;
+  color: white ;
+}
 .navigation .options ul li:hover{
   color: white;
   background-color: orangered;
@@ -107,7 +112,7 @@ height: 10px;
   column-gap: 30px;
 }
 .navigation .buttons ul li{
-  background-color: rgb(179, 48, 0);
+  background-color: rgb(251, 89, 31);
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
@@ -655,59 +660,85 @@ row-gap: 10px;
 .menu-icon{
   display: none;
 }
-.mobileNavBar{
+.mobileNavBar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 30px 30px;
   margin-top: -15px;
-  
+  background-color: rgb(255, 228, 219);
 }
-.mobileNavBar h2{
+
+.mobileNavBar h2 {
   font-size: 18px;
   background-color: orangered;
-  padding:10px 20px;
+  padding: 10px 20px;
   color: white;
-  border-radius:10px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   column-gap: 10px;
 }
-.Nav-list{
-   width: 100%;
+
+.Nav-list {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: all 1s;
-  background-color: #e8e8e8;
+
+  overflow: hidden;
+  max-height: 0;           /* hidden by default */
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: max-height 0.6s ease, opacity 0.6s ease, transform 0.6s ease;
+
   color: rgb(115, 33, 33);
+  background-image: linear-gradient(
+    180deg,
+    rgb(255, 228, 219),
+    rgb(255, 205, 189),
+    rgb(255, 162, 129)
+  );
 }
-.Nav-list ul{
+
+/* when nav is open */
+.Nav-list.open {
+  max-height: 400px;       /* enough to fit content */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.Nav-list ul {
   width: 100%;
   list-style: none;
-  padding:20px 0px;
+  padding: 20px 0px;
   display: flex;
   flex-direction: column;
-  row-gap:10px;
+  row-gap: 10px;
 }
-.Nav-list ul li{
+
+.Nav-list ul li {
   width: 100%;
- display: flex;
- align-items: center;
- justify-content: center;
- padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  color: black;
+  font-weight: bolder;
+  cursor: pointer;
 }
-.Nav-list ul li:hover{
+
+.Nav-list ul li:hover {
   background-color: rgb(13, 0, 255);
   color: white;
- 
 }
-.mobileNavBar-con{
+
+.mobileNavBar-con {
   display: none;
 }
+
 
 /*----------------------------------- message-------------------------------------*/
 .message{
@@ -739,7 +770,7 @@ row-gap: 10px;
   align-items: center;
   justify-content: space-evenly;
   height:550px;
-  
+ background-color: #dfdfdf;
 }
 @media screen and (max-width:1200px){
   .hero{

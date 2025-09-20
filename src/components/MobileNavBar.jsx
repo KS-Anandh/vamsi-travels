@@ -2,48 +2,42 @@ import React, { useState } from "react";
 import { ImMenu } from "react-icons/im";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { AiFillCloseCircle } from "react-icons/ai";
-const MobileNavBar = ({homePage,servicePage,contactPage,RentPage}) => {
-    const [nav,setNav]=useState(false);
-    const navToggle=()=>{
-        setNav((e)=>!nav)
-    }
+
+const MobileNavBar = ({ homePage, servicePage, contactPage, RentPage }) => {
+  const [nav, setNav] = useState(false);
+
+  const navToggle = () => {
+    setNav((e) => !e);
+  };
+
+  const handleScroll = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+    setNav(false);
+  };
+
   return (
-    <div className="mobileNavBar-con" >
+    <div className="mobileNavBar-con">
       <div className="mobileNavBar">
-        <h2 >
-          {" "}
+        <h2>
           <BiSolidPhoneCall size={25} />
-          <a href="tel:8143413999">
-            8143413999
-          </a>
-    
-          
+          <a href="tel:8143413999">8143413999</a>
         </h2>
-    
-        {
-            !nav? <ImMenu size={30} onClick={navToggle}/>:<AiFillCloseCircle size={30} onClick={navToggle}/>
-        }
+
+        {!nav ? (
+          <ImMenu size={30} onClick={navToggle} />
+        ) : (
+          <AiFillCloseCircle size={30} onClick={navToggle} />
+        )}
       </div>
-      <div className="Nav-list" style={{display:nav?"flex":"none"}}>
-            <ul>
-                <li onClick={()=>{
-                    homePage.current.scrollIntoView({ behavior: "smooth" });
-                    setNav(false)
-                    }}
-                    >Home</li>
-                <li onClick={()=>{
-                    servicePage.current.scrollIntoView({ behavior: "smooth" });
-                    setNav(false)
-                    }}>Services</li>
-                <li onClick={()=>{
-                    contactPage.current.scrollIntoView({ behavior: "smooth" });
-                    setNav(false)
-                    }}>Contact US</li>
-                <li onClick={()=>{
-                    RentPage.current.scrollIntoView({ behavior: "smooth" });
-                    setNav(false)
-                    }}>Rental Cars</li>
-            </ul>
+
+      {/* animate with class instead of display none */}
+      <div className={`Nav-list ${nav ? "open" : ""}`}>
+        <ul>
+          <li onClick={() => handleScroll(homePage)}>Home</li>
+          <li onClick={() => handleScroll(servicePage)}>Services</li>
+          <li onClick={() => handleScroll(contactPage)}>Contact Us</li>
+          <li onClick={() => handleScroll(RentPage)}>Rental Cars</li>
+        </ul>
       </div>
     </div>
   );

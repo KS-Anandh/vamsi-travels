@@ -31,8 +31,8 @@ const Navigation = ({homePage,servicePage,contactPage,RentPage}) => {
           <img src={seel} className="seel" alt="" />
         </div>
         <div className="title">
-          <h2>Vamsi Travels </h2>
-          <h3><FaLocationDot color="red"/> <span style={{marginLeft:"5px"}}>Kakinada</span></h3>
+          <h2 className="font-bold text-2xl">Vamsi Travels </h2>
+          <h3 className="font-bold"><FaLocationDot color="red"/> <span style={{marginLeft:"5px"}}>Kakinada</span></h3>
         </div>
         
       </div>
