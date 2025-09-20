@@ -24,7 +24,7 @@ const MobileNavBar = ({ homePage, servicePage, contactPage, RentPage }) => {
         </h2>
           <h2>
           <BiSolidPhoneCall size={20} />
-          <a href="tel:8143413999">8143413999</a>
+          <a href="tel:9966238008">9966238008</a>
         </h2>
 
         {!nav ? (
