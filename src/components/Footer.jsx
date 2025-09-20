@@ -7,10 +7,10 @@ const Footer = () => {
         <div className="address-info">
           <img src={logo} alt="" />
           <div className="info">
-            <h2>Car Travel Agency In Kakinada</h2>
-            <p>Plot No 83, PN Colony, Srikakulam, AP</p>
-            <p>ksanandh@gmail.com</p>
-            <p>9676906525 || 96756906525</p>
+            <h2 className="text-2xl font-bold text-orange-600">Car Travel Agency In Kakinada</h2>
+            <p>Kakinada, Andhra Pradesh</p>
+            <p>contact@vamsitravelskakinada.com</p>
+            <p>8143413999 || 9966238008</p>
           </div>
         </div>
         <div className="our-offeres">
@@ -36,7 +36,7 @@ const Footer = () => {
 
       <div className="footer-copyright">
         <p>
-          Copyright 2025 Vamsi Travels. All Rights Reserved. Developed By <span style={{color:"orangered",opacity:"0.7"}}><a href="https://innosify.com/">Innosify Pvt Ltd</a></span>
+          Copyright 2025 Vamsi Travels. All Rights Reserved. Developed By <span style={{color:"orangered",opacity:"0.8"}}><a href="https://innosify.com/">Innosify Pvt Ltd</a></span>
         </p>
       </div>
     </footer>

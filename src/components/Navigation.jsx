@@ -49,9 +49,9 @@ const Navigation = ({homePage,servicePage,contactPage,RentPage}) => {
         <ul>
           <li>
             {" "}
-            <BiSolidPhoneCall size={20} /> 8143413999{" "}
+            <BiSolidPhoneCall size={20} /> <a href="tel:9876765678">8143413999</a>{" "}
           </li>
-          <li> Book Now </li>
+          <li onClick={scrollToContactPage}> Book Now </li>
         </ul>
       </div>
      
