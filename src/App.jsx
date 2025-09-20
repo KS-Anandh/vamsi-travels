@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import Navigation from './components/Navigation'
 import Slider from './components/Slider'
 import WhyToChooseUS from './components/WhyToChooseUS'
