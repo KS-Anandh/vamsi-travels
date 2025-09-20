@@ -471,17 +471,17 @@ row-gap: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width:170px;
-  padding: 10px 30px;
+  width:fit-content;
+  padding: 10px 25px;
   color: white;
-  font-weight: 700;
-  border-radius: 5px;
+  font-weight: 800;
+  border-radius: 10px;
    background-color: darkcyan;
    cursor: pointer;
 }
 
 .journey-buttons ul li:hover{
-  background-color: darkolivegreen;
+  background-color: orangered;
 }
 
 .popularJourney-cards{

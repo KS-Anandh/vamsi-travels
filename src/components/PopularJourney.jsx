@@ -130,11 +130,11 @@ const packages=[
       </div>
       <div className="journey-buttons">
         <ul>
-          <li onClick={()=>setCategory(0)} style={{background:category==0?"darkolivegreen":""}}>See All</li>
-          <li onClick={()=>setCategory(1)} style={{background:category==1?"darkolivegreen":""}}>Temples</li>
-          <li onClick={()=>setCategory(2)} style={{background:category==2?"darkolivegreen":""}}>Droping</li>
-          <li onClick={()=>setCategory(3)} style={{background:category==3?"darkolivegreen":""}}>Tourist Place</li>
-          <li onClick={()=>setCategory(0)} style={{background:category==4?"darkolivegreen":""}}>Custom Plan</li>
+          <li onClick={()=>setCategory(0)} style={{background:category==0?"orangered":""}}>See All</li>
+          <li onClick={()=>setCategory(1)} style={{background:category==1?"orangered":""}}>Temples</li>
+          <li onClick={()=>setCategory(2)} style={{background:category==2?"orangered":""}}>Droping</li>
+          <li onClick={()=>setCategory(3)} style={{background:category==3?"orangered":""}}>Tourist Place</li>
+          <li onClick={()=>setCategory(0)} style={{background:category==4?"orangered":""}}>Custom Plan</li>
         </ul>
       </div>
     
