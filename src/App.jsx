@@ -10,7 +10,9 @@ import MobileNavBar from './components/MobileNavBar'
 import Message from './components/Message'
 import Hero from './components/Hero'
 const App = () => {
-     
+      useEffect(() => {
+    document.documentElement.classList.remove("dark"); // removes dark mode
+  }, []);
   const homePage = useRef(null);
   const servicePage = useRef(null)
   const contactPage= useRef(null)
