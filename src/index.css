@@ -3,7 +3,15 @@
 
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
+/* Force permanent light mode */
+:root {
+  color-scheme: light; /* ignores OS dark mode */
+}
 
+/* Override any dark:* styles */
+html.dark, .dark {
+  all: unset; /* removes dark mode styles entirely */
+}
 *{
   padding: 0px;
   margin: 0px;
@@ -770,7 +778,7 @@ row-gap: 10px;
   align-items: center;
   justify-content: space-evenly;
   height:550px;
- background-color: #dfdfdf;
+ background-color: #eeeeee;
 }
 @media screen and (max-width:1200px){
   .hero{
