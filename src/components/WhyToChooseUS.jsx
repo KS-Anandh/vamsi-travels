@@ -23,39 +23,63 @@ const WhyToChooseUS = ({homePage}) => {
         </p>
       </div>
       <div className="specifications">
-        <div className="specification">
+        <div className="specification indicator avatar">
+  <span className="indicator-item badge badge-secondary w-10 h-7">Offer</span>
+  
 
-          <h3> Trusted Local Travel Partner </h3>
+          <h3>Special Offer – Sudden Vehicle One Day Rent</h3>
        
-          <p>
-            With years of experience serving the people of Kakinada and
-            surrounding areas, Vamsi Travels is a name you can trust for safe,
-            reliable, and affordable travel.
-          </p>
+          <ul>
+            <li><span className="title">Price:</span> ₹2500</li>
+            <li><span className="title">Seating:</span> 4+1 (driver)</li>
+            <li><span className="title">Duration:</span> 10 Hours</li>
+            <li><span className="title">Free KM:</span> 50 KM included</li>
+            <li><span className="title">Extra Charges:</span> After 50 KM, standard per KM charges apply. </li>
+            <li style={{textAlign:"start",background:"black",padding:"10px 20px",marginTop:"10px",borderRadius:"10px"}}> ✔ Perfect for quick trips, business travel, or short journeys. </li>
+          </ul>
         </div>
-        <div className="specification">
-          <h3> Wide Range of Vehicles </h3>
-          <p>
-            From hatchbacks and sedans to luxury cars, SUVs, and tempo
-            travellers – we have a vehicle for every need and group size.
-          </p>
+         <div className="specification indicator avatar">
+<span className="indicator-item badge badge-secondary w-10 h-7">Offer</span>
+          <h3>Special Offer – Heavy Vehicle One Day Rent</h3>
+       
+          <ul>
+            <li><span className="title">Price:</span> ₹3000</li>
+            <li><span className="title">Seating:</span> 6+1 (driver)</li>
+            <li><span className="title">Duration:</span> 10 Hours</li>
+            <li><span className="title">Free KM:</span> 50 KM included</li>
+            <li><span className="title">Extra Charges:</span> After 50 KM, standard per KM charges apply. </li>
+            <li style={{textAlign:"start",background:"black",padding:"10px 20px",marginTop:"10px",borderRadius:"10px"}}> ✔ Perfect for goods transport, bulk travel, or long business trips. </li>
+          </ul>
         </div>
-        <div className="specification">
-          <h3> Professional & Friendly Drivers</h3>
-          <p>
-            Our drivers are well-trained, courteous, and familiar with all major
-            routes and tourist spots. Your safety and comfort are always our
-            priority.
-          </p>
+         <div className="specification indicator avatar">
+<span className="indicator-item badge badge-secondary w-10 h-7">Offer</span>
+          <h3>Special Offer – Innova Crista One Day Rent</h3>
+       
+          <ul>
+            <li><span className="title">Price:</span> ₹3500</li>
+            <li><span className="title">Seating:</span> 6+1 (driver)</li>
+            <li><span className="title">Duration:</span> 10 Hours</li>
+            <li><span className="title">Free KM:</span> 50 KM included</li>
+            <li><span className="title">Extra Charges:</span> After 50 KM, standard per KM charges apply. </li>
+            <li style={{textAlign:"start",background:"black",padding:"10px 20px",marginTop:"10px",borderRadius:"10px"}}> ✔ Perfect for family trips, airport transfers, and luxury business travel.. </li>
+          </ul>
         </div>
-        <div className="specification">
-          <h3> Affordable Pricing </h3>
-          <p>
-            No hidden charges – just clear, transparent rates for every ride. We
-            offer competitive pricing for both short trips and long-distance
-            travel.
-          </p>
+         <div className="specification indicator">
+
+  <span className="indicator-item badge badge-primary w-10 h-7">New</span>
+
+          <h3>🌟 Special Offer – Next Trip Discount</h3>
+       
+          <ul>
+            <li><span className="title">Offer:</span> 10% off on your next trip</li>
+            <li><span className="title">Applies To:</span> Any vehicle </li>
+            <li><span className="title">Validity:</span> Within 2 Months of your current booking</li>
+            <li><span className="title">How to Avail:</span> Automatically applied</li>
+            <li><span className="title">Bonus:</span>  Priority booking for this offer. </li>
+         
+          </ul>
         </div>
+     
       </div>
     </div>
   );
